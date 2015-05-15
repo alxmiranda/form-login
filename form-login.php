@@ -12,8 +12,14 @@
 			<input type="email" placeholder="Email" requered />
 			<input type="password" placeholder="Senha" requered />
 			<input type="submit" value="Enviar" />
-			<div class="remember-and-links">
+			<div class="remember">
 				<input type="checkbox" name="remember" />
+			</div>
+			<div class="opcoes">
+				<p>
+				<a href="" title="Registra">Registrar</a> | 
+				<a href="" title="Registra">Esqueceu a senha ?</a>
+				</p>
 			</div>
 		</form>
 	</div>

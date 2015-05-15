@@ -9,6 +9,7 @@
 body{	
 	background: #222222;
 	font-size: 62.5%;
+	font-family: "Open Sans";
 }
 /*
 =====================================================
@@ -16,17 +17,17 @@ body{
 2. Fomulario
 	2.1 Inputs
 		2.1.1 Input submit
-		2.1.2 Input radio
-3. Remember and Links
+3. Remember
+	3.1 Input checkbox
 =====================================================
 */
 
 /* 1. Container */
 .container{
 
-	height: 600px;
-	max-width: 800px;
-	max-height: 600px;
+	height: 60em;
+	max-width: 80em;
+	max-height: 60em;
 	position: absolute;
 	margin: auto;
 	background: #36373C;
@@ -34,14 +35,31 @@ body{
 	top:0; 	bottom: 0; 	left: 0; 	right: 0;
 }
 
-
 /* 2. Formulario */
 .form-login{
 	width: 31.25%; /* 250px/800px */
-	height: 30em;
-	margin: 0 auto;
+	height: 16em;
+	margin: 22em auto; /* 60 - 16 / 2 */
 	position: relative;
-	background: #353535;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+	from { opacity:0; }
+	to { opacity:1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein { 
+	from { opacity:0; }
+	to { opacity:1; }
+}
+/* Safari and Chrome */
+@-webkit-keyframes fadein { 
+	from { opacity:0; }
+	to { opacity:1; }
 }
 
 /* 2.1 inputs */
@@ -54,20 +72,47 @@ body{
 
 	margin-bottom: 0.7em;
 }
-
+.form-login input:focus{
+	box-shadow: 0 0 8px #1B8C6D;
+}
 /* 2.1.1 Input submit */
 .form-login input[type="submit"]{
-	font-weight: bold;
+	font-weight: normal;
 	color:#fff;
 	cursor:pointer;
 	background: #149E79;
 }
-
-/* 2.1.2 Input submit */
-.form-login input[type="checkbox"]{
-	width: 2em;
-	height: 2em;
-	background: red;
-	border-radius: 0.8em;
-	border:none;
+.form-login input[type="submit"]:hover{
+ background: #1B8C6D;
+ transition: background ease 0.2s;
 }
+
+/* 3. Remember */
+.remember{
+	width: 15%;
+	display: inline;
+	float: left;
+	color: #59595D;
+}
+.remember input[type="checkbox"]{
+	width: auto;
+	height: auto;
+	float: left;
+	display: none;
+	position: relative;
+}
+/* 3.1 Input checkbox */
+
+/* 3.1 Opções */
+.opcoes p{ 
+	float: right;
+	color: #848486;
+}
+
+.opcoes a{
+	color: #848486;
+	font-size: 1.3em;
+ 	text-decoration: none;
+}
+
+.opcoes a:hover{ color: #fff; transition: color ease 0.2s;}
