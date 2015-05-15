@@ -1,0 +1,73 @@
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{	
+	background: #222222;
+	font-size: 62.5%;
+}
+/*
+=====================================================
+1. Container
+2. Fomulario
+	2.1 Inputs
+		2.1.1 Input submit
+		2.1.2 Input radio
+3. Remember and Links
+=====================================================
+*/
+
+/* 1. Container */
+.container{
+
+	height: 600px;
+	max-width: 800px;
+	max-height: 600px;
+	position: absolute;
+	margin: auto;
+	background: #36373C;
+
+	top:0; 	bottom: 0; 	left: 0; 	right: 0;
+}
+
+
+/* 2. Formulario */
+.form-login{
+	width: 31.25%; /* 250px/800px */
+	height: 30em;
+	margin: 0 auto;
+	position: relative;
+	background: #353535;
+}
+
+/* 2.1 inputs */
+.form-login input{
+	width: 100%;
+	height: 2.5em;
+	padding: 0.6em;
+	border: none;
+	border-radius: 0.3em;
+
+	margin-bottom: 0.7em;
+}
+
+/* 2.1.1 Input submit */
+.form-login input[type="submit"]{
+	font-weight: bold;
+	color:#fff;
+	cursor:pointer;
+	background: #149E79;
+}
+
+/* 2.1.2 Input submit */
+.form-login input[type="checkbox"]{
+	width: 2em;
+	height: 2em;
+	background: red;
+	border-radius: 0.8em;
+	border:none;
+}
